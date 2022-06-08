@@ -8,7 +8,7 @@
         "s3_bucket": "zappa-ea3crt88t",
         "events": [{
             "function": "hook.handler",
-            "expression": "rate(7 days)"
+            "expression": "cron(0 12 ? * MON *)"
         }]
     },
     "dev": {
